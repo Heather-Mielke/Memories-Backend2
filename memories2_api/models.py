@@ -9,3 +9,4 @@ class Photo(models.Model):
     description = models.TextField()
     likes = models.IntegerField(default=0)
     post_date = models.DateField(default=datetime.today)
+    creator = models.CharField(max_length=32, default='Anonymous')
